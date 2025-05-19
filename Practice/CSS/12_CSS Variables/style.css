@@ -1,0 +1,18 @@
+:root{
+    --textcolor: gray;
+    --bcgcolor: rgb(221, 221, 221);
+    --headingcolor:red;
+    --parafontsize: 24px;
+}
+h1{
+    color: var(--headingcolor);
+}
+p{
+    color: var(--textcolor);
+    background-color: var(--bcgcolor);
+}
+.para2{
+    --textcolor: rgb(45, 100, 37);
+    color: var(--textcolor);
+    font-size: var(--parafontsize);
+}

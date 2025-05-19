@@ -1,0 +1,60 @@
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      border: 1px solid red;
+      width: 90vw;
+      height: 140vh; /* Taller than viewport to enable scroll */
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      height: 50px;
+      width: 50px;
+      border: 1px solid black;
+    }
+
+    .box1 {
+      background-color: red;
+      position: static;
+    }
+
+    .box2 {
+      position: fixed; /* ✅ This keeps it fixed */
+      top: 10px;       /* Small offset from top */
+      right: 10px;     /* Small offset from right */
+      background-color: rgb(9, 255, 0);
+      z-index: 999;    /* Make sure it's above other elements */
+    }
+
+    .box3 {
+      bottom: 0;
+      left: 0;
+      background-color: rgb(255, 0, 255);
+      position: absolute;
+    }
+
+    .box4 {
+      bottom: 0;
+      right: 0;
+      background-color: rgb(255, 230, 0);
+      position: absolute;
+    }
+
+    .box5 {
+      background-color: rgb(76, 0, 255);
+    }
