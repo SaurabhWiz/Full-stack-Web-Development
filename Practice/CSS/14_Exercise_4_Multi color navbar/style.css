@@ -1,0 +1,45 @@
+:root{
+    --navBarColor:lightblue;
+    --elemHoverColor: blue;
+    --elemtextcolorHover: white;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    border: 1px solid red;
+    padding: 20px;
+    background-color: var(--navBarColor);
+}
+nav>ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+nav>ul>li{
+    padding: 10px;
+    border-radius: 10px;
+}
+li:hover{
+  background-color: var(--elemHoverColor);
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+li:hover a{
+color: var(--elemtextcolorHover);
+}
+
