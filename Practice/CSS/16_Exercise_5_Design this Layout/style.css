@@ -131,6 +131,12 @@ video{
     gap: 30px;
     padding: 2vw;
 }
+.about>h1{
+    font-size: 2vw;
+}
+.about>p{
+    font-size: 1vw;
+}
 .footer{
     height: 5vw;
     width: 100%;
