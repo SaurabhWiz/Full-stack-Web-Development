@@ -1,0 +1,42 @@
+.container{
+    width: 100vw;
+    height: 80vh;
+    border: 2px solid black;
+}
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: beige;
+    border: 2px solid black;
+    animation-name: demo;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+    /* animation: demo 5s ease-in-out 1s infinite; */
+}
+@keyframes demo {
+    /* from{
+        background-color: red;
+    }
+    to{
+    transform: translate(500px);
+    background-color: rgb(68, 0, 255);
+    } */
+     0%{
+        transform: translateX(0px) rotate(0deg);
+     }
+     25%{
+        transform: translateX(500px) rotate(60deg) ;
+     }
+     50%{
+        transform: translateY(500px) translateX(500px) rotate(160deg) ;
+     }
+     77%{
+         transform: translatey(500px) rotate(260deg) ;
+     }
+     100%{
+        transform: translateX(0px) rotate(360deg);
+     }   
+}
