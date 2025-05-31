@@ -1,13 +1,18 @@
-let a = Math.random() < 0.1; // 10% chance to be true
+let random = Math.random();
+let a = prompt("Enter your First Number: ");
+let b = prompt("Enter your Second Number: ");
+let c = prompt("Enter your Operation: ");
 
-function sum(a, x, y){
-    if(a == false){
-        return x + y;
-    }
-    else{
-        return x - y;
-    }
+let obj= {
+   "+" : "-",
+   "*" : "+",
+   "-" : "/",
+   "/" : "*"
 }
-
-let sum_answer = sum(a, 3, 4);
-console.log("Result = " + sum_answer);
+if(random>0.1){
+    alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
+}
+else{
+    c= obj[c];
+    alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
+}
